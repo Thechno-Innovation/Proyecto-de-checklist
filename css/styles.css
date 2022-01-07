@@ -6,8 +6,11 @@
 #body {
     width: 30%;
     height: 100%;
-    background-color: beige;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: #faf3eb;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px #d3d2d281 ;
 }
 
 h1{
@@ -30,6 +33,7 @@ svg {
 
 .li {
 display: flex;
+margin-left: 25px;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-between;
@@ -41,6 +45,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 25px;
 
 }
 .boton1{
