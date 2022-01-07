@@ -14,7 +14,14 @@ window.onload = init;
             }else{
             let lista = document.createElement("li");
             lista.innerHTML = nuevoItem.value;
+            lista.addEventListener("dblclick",eliminarLi);
             listsTarea.appendChild(lista);
             nuevoItem.value = "";
             }
         }
+
+
+  //para eliminar 
+function eliminarLi(){
+    this.parentNode.removeChild(this);
+}
