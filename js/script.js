@@ -18,3 +18,4 @@ window.onload = init;
             nuevoItem.value = "";
             }
         }
+        
