@@ -14,13 +14,13 @@ function anadir(e) {
   } else {
     let lista = document.createElement("li");
     lista.innerHTML = nuevoItem.value;
-    lista.addEventListener("dblclick", eliminarLi);
+    lista.addEventListener("dblclick", eliminarLi);//rumina funcion eliminar de a lista 
     listsTarea.appendChild(lista);
     nuevoItem.value = "";
   }
 }
 
-//para eliminar
+//para eliminar de la lista rumina
 function eliminarLi() {
   this.parentNode.removeChild(this);
 }
