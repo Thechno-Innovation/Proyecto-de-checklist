@@ -12,32 +12,26 @@ function anadir(e) {
   if (nuevoItem.value == "") {
     evento.preventDefault();
   } else {
-    let lista = document.createElement("li");
-    lista.innerHTML = nuevoItem.value;
+    let lista = document.createElement("div.li");
+    lista.innerHTML("");
     listsTarea.appendChild(lista);
     nuevoItem.value = "";
   }
 }
 
-// Sin terminar - Dina
-
-// const button = document.querySelector(".li .check");
-const div = document.querySelector(".li");
-// console.log(button);
-console.log(div);
+// By Dina
 
 function botones(elm) {
-  elm.classList.add("activado");
-  console.log(elm);
-  const button = document.querySelector(".activado");
-}
-
-button.addEventListener("click", function () {
-  const li = button.parentElement;
+  const li = elm.parentElement;
   var texto = li.firstElementChild;
+  var button = elm.firstElementChild;
+
   if (texto.style.textDecoration == "line-through") {
     texto.style.textDecoration = "none";
+    button.style.color = "white";
   } else {
     texto.style.textDecoration = "line-through";
+    button.style.color = "black";
   }
-});
+}
+
