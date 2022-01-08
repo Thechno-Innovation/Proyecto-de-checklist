@@ -21,25 +21,23 @@ function anadir(e) {
 
 // Sin terminar - Dina
 
-const button = document.querySelector(".li .boton");
-const div = document.querySelector(".li")
-console.log(button);
+// const button = document.querySelector(".li .check");
+const div = document.querySelector(".li");
+// console.log(button);
 console.log(div);
 
-button.addEventListener('click', function() {
-    const li = button.parentElement;
-    var texto = li.firstElementChild;
-    if (texto.classList.contains("cheked") == false){
-        texto.classList.add("checked");
-    }
-    else
-    {
-        texto.classList.remove("checked");
-    }
+function botones(elm) {
+  elm.classList.add("activado");
+  console.log(elm);
+  const button = document.querySelector(".activado");
+}
+
+button.addEventListener("click", function () {
+  const li = button.parentElement;
+  var texto = li.firstElementChild;
+  if (texto.style.textDecoration == "line-through") {
+    texto.style.textDecoration = "none";
+  } else {
+    texto.style.textDecoration = "line-through";
+  }
 });
-
-const button1 = document.querySelector("ul .li:nth-child(1)");
-
-for()
-
-if 
