@@ -3,14 +3,13 @@
   padding: 0;
 }
 
+
 .body {
   width: 30%;
   height: 100%;
-  margin-top: 25px;
-  margin-left: 25px;
   background-color: #faf3eb;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-shadow: 5px 5px #d3d2d281;
+  
 }
 
 h1 {
@@ -24,13 +23,11 @@ h1 {
 }
 
 svg {
-  float: right;
-  margin-right: 40px;
+  display: flex;
 }
 
 .li {
   display: flex;
-  margin-left: 25px;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -40,8 +37,11 @@ footer {
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 25px;
+}
+
+input {
+  width: 230px;
+  border-radius: 8%;
 }
 .boton1 {
   width: 230px;
@@ -54,7 +54,6 @@ footer {
   border-radius: 8%;
   border-color: rgb(79, 224, 243);
 }
-
 
 /* By Dina */
 .check {
@@ -72,7 +71,6 @@ footer {
     border-radius: 50%;
 }
 /* ---------------------------------- */
-
 
 /* hecho por javier */
 
@@ -100,3 +98,4 @@ footer {
   transition: 3s;
   border: 30px solid yellow;
 }
+
