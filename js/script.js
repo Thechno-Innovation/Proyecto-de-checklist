@@ -1,9 +1,8 @@
 window.onload = init;
         function init(){
             botonEnvio = document.querySelector(".boton2");
-            nuevoItem = document.querySelector('[type="text"]');
+           nuevoItem = document.querySelector('[type="text"]');
             listsTarea = document.getElementById("listaTarea");
-            
             botonEnvio.addEventListener("click",anadir);
         }
 
@@ -12,7 +11,7 @@ window.onload = init;
             if (nuevoItem.value == ""){
                 evento.preventDefault();
             }else{
-            let lista = document.createElement("li");
+            let lista = document.createElement("ul");
             lista.innerHTML = nuevoItem.value;
             listsTarea.appendChild(lista);
             nuevoItem.value = "";
