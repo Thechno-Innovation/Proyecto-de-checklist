@@ -35,6 +35,8 @@ function botones(elm) {
   }
 }
 
+//-----------------------------------------------
+
 
 function anadir(e) {
   evento = e || window.event;
