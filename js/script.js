@@ -7,17 +7,6 @@ function init() {
   botonEnvio.addEventListener("click", anadir);
 }
 
-function anadir(e) {
-  evento = e || window.event;
-  if (nuevoItem.value == "") {
-    evento.preventDefault();
-  } else {
-    let lista = document.createElement("div.li");
-    lista.innerHTML("");
-    listsTarea.appendChild(lista);
-    nuevoItem.value = "";
-  }
-}
 
 // By Dina
 
@@ -37,13 +26,12 @@ function botones(elm) {
 
 //-----------------------------------------------
 
-
 function anadir(e) {
   evento = e || window.event;
   if (nuevoItem.value == "") {
     evento.preventDefault();
   } else {
-    let lista = document.createElement("li");
+    let lista = document.createElement("ul");
     lista.innerHTML = nuevoItem.value;
     lista.addEventListener("dblclick", eliminarLi);//rumina funcion eliminar de a lista 
     listsTarea.appendChild(lista);
