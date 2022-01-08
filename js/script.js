@@ -12,7 +12,7 @@ function anadir(e) {
   if (nuevoItem.value == "") {
     evento.preventDefault();
   } else {
-    let lista = document.createElement("li");
+    let lista = document.createElement("ul");
     lista.innerHTML = nuevoItem.value;
     lista.addEventListener("dblclick", eliminarLi);//rumina funcion eliminar de a lista 
     listsTarea.appendChild(lista);
