@@ -54,6 +54,26 @@ footer {
   border-radius: 8%;
   border-color: rgb(79, 224, 243);
 }
+
+
+/* By Dina */
+.check {
+  display: flex;
+  align-items: stretch;
+  border: none;
+  margin-right: 8%;
+  background-color: transparent;
+}
+
+.li svg{
+    background-color: white;
+    color: white;
+    outline: black 1px solid;
+    border-radius: 50%;
+}
+/* ---------------------------------- */
+
+
 /* hecho por javier */
 
 .newbackground {
